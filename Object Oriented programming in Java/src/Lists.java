@@ -10,6 +10,7 @@ public class Lists {
         System.out.println("Before removal: "+myList);
         for (int i = 0; i < myList.size(); i++) {
             myList.remove(i);
+            i--;
         }
         System.out.println("After removal: " + myList);
     }

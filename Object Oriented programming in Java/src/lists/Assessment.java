@@ -16,6 +16,11 @@ public class Assessment {
         twoDimensions1(arr);
         System.out.println();
         printArray();
+        //5
+        int[] nums = {5, 3, 6, 8, 11, 2};
+        change(nums);
+        //7
+        TwoDArrayCreate();
     }
 
     ;
@@ -54,4 +59,28 @@ public class Assessment {
             System.out.print(anArray[j] + " ");
         }
     }
+
+     static void change (int[] arr) {
+        int k = arr[0];
+        for (int i = 0; i < arr.length; i++) {
+            if (k < arr[i]) {
+                arr[0] = arr[i];
+                arr[i] = k;
+                k = arr[0];
+            }
+        }
+         System.out.println("Fifth task: ");
+         System.out.print(Arrays.toString(arr));
+    }
+
+    static void TwoDArrayCreate (){
+        System.out.println();
+        String[][] set = {{"Hello", "world!"}, {"world", "Hello "}, {"Hello", "!", "Hello"}};
+        String hello1 = set[0][1] + set[1][0];
+        String hello2 = set[1][1] + set[0][1];
+        String hello3 = set[1][1] + set[1][0] + set[2][1];
+        System.out.println(hello1 + " Second: "+ hello2+ " Third: " + hello3);
+    }
+
+
 }
