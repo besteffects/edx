@@ -21,6 +21,9 @@ public class Assessment {
         change(nums);
         //7
         TwoDArrayCreate();
+        //8
+        int[] values = {1, 4, -7, -3};
+        multiply(values,2);
     }
 
     ;
@@ -74,12 +77,25 @@ public class Assessment {
     }
 
     static void TwoDArrayCreate (){
-        System.out.println();
+        System.out.println("Task 7");
         String[][] set = {{"Hello", "world!"}, {"world", "Hello "}, {"Hello", "!", "Hello"}};
         String hello1 = set[0][1] + set[1][0];
         String hello2 = set[1][1] + set[0][1];
         String hello3 = set[1][1] + set[1][0] + set[2][1];
         System.out.println(hello1 + " Second: "+ hello2+ " Third: " + hello3);
+    }
+
+     static void multiply(int[] values, int amount) {
+         System.out.println("Task 8");
+        for (int i = 0; i < values.length; i++) {
+            values[i] = values[i] + amount;
+            // 1, 4, -7, -3; 2
+            // 3,
+        }
+        for (int value:values) {
+            System.out.print(" " + value);
+        }
+        // System.out.println(Arrays.toString(values));
     }
 
 
