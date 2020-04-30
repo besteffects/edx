@@ -1,3 +1,5 @@
+package lists_arrays;
+
 import java.util.ArrayList;
 
 public class Lists {
@@ -7,10 +9,9 @@ public class Lists {
         myList.add("text2");
         myList.add("text3");
         myList.add("text4");
-        System.out.println("Before removal: "+myList);
+        System.out.println("Before removal: " + myList);
         for (int i = 0; i < myList.size(); i++) {
             myList.remove(i);
-            i--;
         }
         System.out.println("After removal: " + myList);
     }
