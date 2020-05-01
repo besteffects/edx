@@ -17,6 +17,10 @@ public class Point {
         this.y = y;
     }
 
+    public String toString(){
+        return  "java.awt.Point[x=" + x + ",y=" + y + "]";
+    }
+
     public double distance(Point other) {
 
         return Math.sqrt(Math.pow((other.x - this.x), 2) + Math.pow((other.y - this.y), 2));
