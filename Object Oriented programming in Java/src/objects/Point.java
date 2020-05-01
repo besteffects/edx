@@ -17,6 +17,13 @@ public class Point {
         this.y = y;
     }
 
+    // Add a constructor to the Point class that accepts another Point as a parameter and initializes the new Point to
+    // have the same (x, y) values. Use the keyword this in your solution.
+    Point(Point other) {
+        this.x = other.x;
+        this.y = other.y;
+    }
+
     public String toString(){
         return  "java.awt.Point[x=" + x + ",y=" + y + "]";
     }
