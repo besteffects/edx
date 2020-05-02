@@ -22,4 +22,16 @@ public class Name {
     public char getMiddleInitial() {
         return middleInitial;
     }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public void setMiddleInitial(char middleInitial) {
+        this.middleInitial = middleInitial;
+    }
 }
