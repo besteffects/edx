@@ -28,4 +28,10 @@ public class Staff {
     public void setVacation(int vacation) {
         this.vacation = vacation;
     }
+
+    public Staff(int hours, int salary, int vacation) {
+        this.hours = hours;
+        this.salary = salary;
+        this.vacation = vacation;
+    }
 }
