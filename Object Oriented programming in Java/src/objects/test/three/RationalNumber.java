@@ -12,7 +12,9 @@ public class RationalNumber {
 
     public static void main(String[] args) {
         RationalNumber number = new RationalNumber(6, 3);
-
+        number.multiply(number);
+        System.out.println(number.num);
+        System.out.println(number.den);
     }
 
     /**
@@ -37,20 +39,24 @@ public class RationalNumber {
 
     public void multiply(RationalNumber r) {
         /*missing code*/
+        num = num * r.getNum();
+        den = den * r.getDen();
 
     }
 
     /**
      * @return the numerator
      */
-//    public int getNum() {
-//      //implementation not shown  //return num;
-//    }
+    public int getNum() {
+      //implementation not shown
+        return num;
+    }
 
     /**
      * @return the denominator
      */
-//    public int getDen() {
-//        //implementation not shown  // return den;
-//    }
+    public int getDen() {
+        //implementation not shown
+        return den;
+    }
 }

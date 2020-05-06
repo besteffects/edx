@@ -3,6 +3,6 @@ package objects.test;
 public class NumberTest{
     public static void main(String[] args) {
         Number firtsNum= new Number();
-        System.out.println();
+        System.out.println(firtsNum.toString());
     }
 }
