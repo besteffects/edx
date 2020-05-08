@@ -13,5 +13,8 @@ public class BigSum extends Sum {
     public static void main(String[] args) {
         Sum s = new BigSum();
         System.out.println(s.doCalc());
+        String foo = "Foo";
+        String foo2 = new String("Foo");
+
     }
 }
