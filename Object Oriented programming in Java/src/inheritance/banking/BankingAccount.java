@@ -1,4 +1,4 @@
-package inheritance;
+package inheritance.banking;
 
 import java.util.LinkedList;
 import java.util.List;
