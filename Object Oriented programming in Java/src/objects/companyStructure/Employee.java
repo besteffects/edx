@@ -4,6 +4,7 @@ abstract public class Employee {
     private String name;
     private double baseSalary;
     private int employeeID;
+    private static int countEmployee;
     private Employee manager;
     private String status;
 
@@ -11,6 +12,8 @@ abstract public class Employee {
     public Employee(String name, double baseSalary) {
         this.name = name;
         this.baseSalary = baseSalary;
+        countEmployee++;
+        this.employeeID=countEmployee;
     }
 
     public double getBaseSalary() {
@@ -26,7 +29,11 @@ abstract public class Employee {
     The first ever employee should have an ID of "1", the second "2" and so on
      */
     public int getEmployeeID() {
-        return employeeID = employeeID++;
+        return employeeID;
+    }
+
+    public void setEmployeeID(int id) {
+        employeeID = id;
     }
 
     //Should return a reference to the Employee object that represents this employee's manager
