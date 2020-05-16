@@ -1,4 +1,4 @@
-package lists_arrays.companyStructure;
+package objects.companyStructure;
 
 abstract public class Employee {
     private String name;
