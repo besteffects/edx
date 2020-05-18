@@ -7,6 +7,11 @@ abstract public class Employee {
     private static int countEmployee;
     private Employee manager;
     private String status;
+    private boolean approval;
+
+    public Employee(boolean approval) {
+        this.approval = approval;
+    }
 
     //Should construct a new employee object and take in two parameters, one for the name of the user and one for their base salary
     public Employee(String name, double baseSalary) {
@@ -14,6 +19,14 @@ abstract public class Employee {
         this.baseSalary = baseSalary;
         countEmployee++;
         this.employeeID=countEmployee;
+    }
+
+    public boolean getApproval() {
+        return approval;
+    }
+
+    public void setApproval(boolean approval) {
+        this.approval = approval;
     }
 
     public double getBaseSalary() {
