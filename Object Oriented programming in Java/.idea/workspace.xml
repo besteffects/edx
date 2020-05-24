@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d927c19c-78c3-494d-adb7-63517a264762" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/objects/companyStructure/Accountant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects/companyStructure/Accountant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/objects/companyStructure/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects/companyStructure/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/objects/companyStructure/TechnicalLead.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects/companyStructure/TechnicalLead.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,11 +29,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/objects/companyStructure/Employee.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="21" selection-end-column="5" />
+            <state relative-caret-position="460">
+              <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
               <folding>
                 <element signature="e#870#871#0" expanded="true" />
                 <element signature="e#903#904#0" expanded="true" />
+                <element signature="e#957#958#0" expanded="true" />
+                <element signature="e#1001#1002#0" expanded="true" />
                 <element signature="e#934#935#0" expanded="true" />
                 <element signature="e#961#962#0" expanded="true" />
                 <element signature="e#1210#1211#0" expanded="true" />
@@ -59,24 +62,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/objects/companyStructure/Accountant.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
+            <state relative-caret-position="510">
+              <caret line="34" column="152" selection-start-line="34" selection-start-column="152" selection-end-line="34" selection-end-column="152" />
               <folding>
-                <element signature="e#525#526#0" expanded="true" />
-                <element signature="e#1354#1355#0" expanded="true" />
+                <element signature="e#487#488#0" expanded="true" />
+                <element signature="e#514#515#0" expanded="true" />
+                <element signature="e#1343#1344#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/objects/companyStructure/TechnicalLead.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
-              <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -84,8 +88,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/objects/companyStructure/TechnicalEmployee.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            <state>
+              <caret column="33" lean-forward="true" selection-start-column="33" selection-end-column="33" />
               <folding>
                 <element signature="e#278#279#0" expanded="true" />
                 <element signature="e#314#315#0" expanded="true" />
@@ -139,6 +143,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>new</find>
+      <find>getBaseSalary</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src/objects/test</dir>
@@ -188,12 +193,13 @@
         <option value="$PROJECT_DIR$/src/inheritance/drinkSipBite/Gulp.java" />
         <option value="$PROJECT_DIR$/src/inheritance/drinkSipBite/Main.java" />
         <option value="$PROJECT_DIR$/src/lists_arrays/companyStructure/Employee.java" />
-        <option value="$PROJECT_DIR$/src/objects/companyStructure/TechnicalEmployee.java" />
-        <option value="$PROJECT_DIR$/src/objects/companyStructure/Employee.java" />
         <option value="$PROJECT_DIR$/src/objects/companyStructure/SoftwareEngineer.java" />
         <option value="$PROJECT_DIR$/src/objects/companyStructure/CompanyStructure.java" />
         <option value="$PROJECT_DIR$/src/objects/companyStructure/BusinessEmployee.java" />
         <option value="$PROJECT_DIR$/src/objects/companyStructure/Accountant.java" />
+        <option value="$PROJECT_DIR$/src/objects/companyStructure/TechnicalEmployee.java" />
+        <option value="$PROJECT_DIR$/src/objects/companyStructure/TechnicalLead.java" />
+        <option value="$PROJECT_DIR$/src/objects/companyStructure/Employee.java" />
       </list>
     </option>
   </component>
@@ -205,9 +211,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="688" />
+    <option name="x" value="734" />
     <option name="y" value="23" />
-    <option name="width" value="752" />
+    <option name="width" value="707" />
     <option name="height" value="804" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -372,10 +378,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="688" y="23" width="752" height="804" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="804" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13380282" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.06795422" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -383,8 +389,8 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.12078652" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.23876405" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.12078652" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.23876405" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -776,36 +782,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/objects/companyStructure/Employee.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="21" selection-end-column="5" />
-          <folding>
-            <element signature="e#870#871#0" expanded="true" />
-            <element signature="e#903#904#0" expanded="true" />
-            <element signature="e#934#935#0" expanded="true" />
-            <element signature="e#961#962#0" expanded="true" />
-            <element signature="e#1210#1211#0" expanded="true" />
-            <element signature="e#1243#1244#0" expanded="true" />
-            <element signature="e#1601#1602#0" expanded="true" />
-            <element signature="e#1659#1660#0" expanded="true" />
-            <element signature="e#1831#1832#0" expanded="true" />
-            <element signature="e#1887#1888#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/objects/companyStructure/TechnicalEmployee.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="e#278#279#0" expanded="true" />
-            <element signature="e#314#315#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/inheritance/test/Sum.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -833,10 +809,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/objects/companyStructure/TechnicalLead.java">
+    <entry file="file://$PROJECT_DIR$/src/objects/companyStructure/Accountant.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+        <state relative-caret-position="510">
+          <caret line="34" column="152" selection-start-line="34" selection-start-column="152" selection-end-line="34" selection-end-column="152" />
+          <folding>
+            <element signature="e#487#488#0" expanded="true" />
+            <element signature="e#514#515#0" expanded="true" />
+            <element signature="e#1343#1344#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -851,14 +832,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/objects/companyStructure/Accountant.java">
+    <entry file="file://$PROJECT_DIR$/src/objects/companyStructure/TechnicalEmployee.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
+        <state>
+          <caret column="33" lean-forward="true" selection-start-column="33" selection-end-column="33" />
           <folding>
-            <element signature="e#525#526#0" expanded="true" />
-            <element signature="e#1354#1355#0" expanded="true" />
+            <element signature="e#278#279#0" expanded="true" />
+            <element signature="e#314#315#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/objects/companyStructure/Employee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+          <folding>
+            <element signature="e#870#871#0" expanded="true" />
+            <element signature="e#903#904#0" expanded="true" />
+            <element signature="e#957#958#0" expanded="true" />
+            <element signature="e#1001#1002#0" expanded="true" />
+            <element signature="e#934#935#0" expanded="true" />
+            <element signature="e#961#962#0" expanded="true" />
+            <element signature="e#1210#1211#0" expanded="true" />
+            <element signature="e#1243#1244#0" expanded="true" />
+            <element signature="e#1601#1602#0" expanded="true" />
+            <element signature="e#1659#1660#0" expanded="true" />
+            <element signature="e#1831#1832#0" expanded="true" />
+            <element signature="e#1887#1888#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/objects/companyStructure/TechnicalLead.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
