@@ -9,6 +9,7 @@ public class SoftwareEngineer extends TechnicalEmployee {
     //Should start without access to code and with 0 code check ins
     public SoftwareEngineer(String name) {
         super(name);
+        codeAccess=false;
     }
 
     // Should return whether or not this SoftwareEngineer has access to make changes to the code base
