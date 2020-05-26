@@ -1,17 +1,23 @@
 package objects.companyStructure;
 
 public class BusinessEmployee extends Employee {
+
+
     private double budget;
 
-    public BusinessEmployee(String name, double baseSalary, double budget) {
-        super(name, baseSalary);
-        this.budget = budget;
-    }
+//    public BusinessEmployee(String name, double baseSalary, double budget) {
+//        super(name, baseSalary);
+//        this.budget = budget;
+//    }
 
     // Should establish a running tally of the remaining bonusBudget for the team this employee supports. How that budget
 // is determined will depend on which type of Business Employee it is
     public double getBonusBudget() {
         return budget;
+    }
+
+    public void setBonusBudget(double budget) {
+        this.budget = budget;
     }
 
     //Has a default base salary of 75000

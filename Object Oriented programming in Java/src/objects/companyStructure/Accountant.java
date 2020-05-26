@@ -2,6 +2,7 @@ package objects.companyStructure;
 
 public class Accountant extends BusinessEmployee {
     TechnicalLead lead;
+    BusinessLead manager;
 
     // Should start with a bonus budget of 0 and no team they are officially supporting
     public Accountant(String name) {
