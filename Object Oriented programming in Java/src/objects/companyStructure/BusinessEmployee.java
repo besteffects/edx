@@ -1,8 +1,6 @@
 package objects.companyStructure;
 
 public class BusinessEmployee extends Employee {
-
-
     private double budget;
 
 //    public BusinessEmployee(String name, double baseSalary, double budget) {

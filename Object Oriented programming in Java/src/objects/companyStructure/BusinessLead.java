@@ -28,9 +28,21 @@ public class BusinessLead extends BusinessEmployee {
     public boolean addReport(Accountant e, TechnicalLead supportTeam) {
         if (hasHeadCount()) {
             directReport.add(e);
-            setBonusBudget(getBonusBudget()*1.1);
+            setBonusBudget(getBonusBudget() * 1.1);
+            e.supportTeam(supportTeam);
             return true;
-        }
-        else return false;
+        } else
+            return false;
+    }
+
+    //Should check if the bonus amount requested would fit in current BusinessLead's budget. If it is, that employee should
+// get that bonus, the BusinessLeader's budget should be deducted and true should be returned. False should be returned otherwise
+    public boolean requestBonus(Employee e, double bonus) {
+        if (getBonusBudget() > bonus) {
+            e.setBonus(getBonus() + bonus);
+            setBonusBudget(getBonusBudget() - bonus);
+            return true;
+        } else
+            return false;
     }
 }

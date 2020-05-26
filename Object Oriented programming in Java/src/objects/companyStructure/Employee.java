@@ -10,6 +10,8 @@ abstract public class Employee {
     private Employee manager;
     private String status;
     private boolean approval;
+    private double budget;
+    private double bonus;
 
     public Employee(boolean approval) {
         this.approval = approval;
@@ -41,6 +43,22 @@ abstract public class Employee {
 
     public String getName() {
         return name;
+    }
+
+    public double getBudget() {
+        return budget;
+    }
+
+    public void setBudget(double budget) {
+        this.budget = budget;
+    }
+
+    public double getBonus() {
+        return bonus;
+    }
+
+    public void setBonus(double bonus) {
+        this.bonus = bonus;
     }
 
     /*
