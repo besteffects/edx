@@ -10,6 +10,7 @@ public class SoftwareEngineer extends TechnicalEmployee {
     public SoftwareEngineer(String name) {
         super(name);
         codeAccess=false;
+        successfulCheckIns=0;
     }
 
     // Should return whether or not this SoftwareEngineer has access to make changes to the code base
@@ -22,6 +23,7 @@ public class SoftwareEngineer extends TechnicalEmployee {
         this.codeAccess = codeAccess;
     }
 
+    //Should return the current count of how many times this SoftwareEngineer has successfully checked in code
     public int getSuccessfulCheckIns() {
         return successfulCheckIns;
     }

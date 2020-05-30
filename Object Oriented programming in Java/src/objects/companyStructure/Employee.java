@@ -2,8 +2,6 @@ package objects.companyStructure;
 
 abstract public class Employee {
     private String name;
-
-
     private double baseSalary;
     private int employeeID;
     private static int countEmployee;
@@ -33,6 +31,7 @@ abstract public class Employee {
         this.approval = approval;
     }
 
+    //Should return the employee's current salary
     public double getBaseSalary() {
         return baseSalary;
     }
@@ -40,7 +39,7 @@ abstract public class Employee {
     public void setBaseSalary(double baseSalary) {
         this.baseSalary = baseSalary;
     }
-
+    //Should return the employee's current name
     public String getName() {
         return name;
     }
@@ -84,7 +83,7 @@ abstract public class Employee {
     }
 
     //Should return a String representation of the employee that is a combination of their id followed by their name.
-// Example: "1 Kasey"
+    // Example: "1 Kasey"
     public String toString() {
         return this.employeeID + " " + this.name;
     }

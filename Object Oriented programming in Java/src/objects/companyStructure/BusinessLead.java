@@ -45,4 +45,16 @@ public class BusinessLead extends BusinessEmployee {
         } else
             return false;
     }
+
+    //This function should look through the Accountants the BusinessLead manages, and if any of them are supporting a the
+// TechnicalLead that is the manager of the Employee passed in then the Accountant's budget should be consulted to see
+// if the bonus could be afforded. If the team can afford the bonus it should be rewarded and true returned, false otherwise
+    public boolean approveBonus(Employee e, double bonus) {
+        for (int i = 0; i < directReport.size(); i++) {
+            if (directReport.get(i).equals(e.getManager()) && directReport.get(i).approvedBonus(bonus)) {
+                return true;
+            }
+        }
+        return false;
+    }
 }

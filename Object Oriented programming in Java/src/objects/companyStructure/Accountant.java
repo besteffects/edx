@@ -7,6 +7,7 @@ public class Accountant extends BusinessEmployee {
     // Should start with a bonus budget of 0 and no team they are officially supporting
     public Accountant(String name) {
         super(name);
+        setBonusBudget(0);
 
     }
 
