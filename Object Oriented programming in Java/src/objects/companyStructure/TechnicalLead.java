@@ -14,6 +14,14 @@ public class TechnicalLead extends TechnicalEmployee {
         headCount = 4;
     }
 
+    public ArrayList<Accountant> getDirectReport() {
+        return directReport;
+    }
+
+    public void setDirectReport(ArrayList<Accountant> directReport) {
+        this.directReport = directReport;
+    }
+
     //Should return true if the number of direct reports this manager has is less than their headcount.
     public boolean hasHeadCount() {
         return directReport.size() < headCount;
