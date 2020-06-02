@@ -11,9 +11,7 @@ abstract public class Employee {
     private double budget;
     private double bonus;
 
-    public Employee(boolean approval) {
-        this.approval = approval;
-    }
+
 
     //Should construct a new employee object and take in two parameters, one for the name of the user and one for their base salary
     public Employee(String name, double baseSalary) {
@@ -75,6 +73,14 @@ abstract public class Employee {
     //Should return a reference to the Employee object that represents this employee's manager
     public Employee getManager() {
         return manager;
+    }
+
+    public void setManager(Employee manager) {
+        this.manager = manager;
+    }
+
+    public Employee(boolean approval) {
+        this.approval = approval;
     }
 
     // Should return true if the two employee IDs are the same, false otherwise

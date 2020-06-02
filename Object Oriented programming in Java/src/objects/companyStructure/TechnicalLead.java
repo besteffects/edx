@@ -27,9 +27,19 @@ public class TechnicalLead extends TechnicalEmployee {
         return directReport.size() < headCount;
     }
 
-    //TODO Should see if the employee passed in does report to this manager and if their code access is currently set to "true".
-    // If both those things are true, true is returned, otherwise false is returned
+    //TODO (VERIFY) Should accept the reference to a SoftwareEngineer object, and if the TechnicalLead has head count left
+    // should add this employee to their list of direct reports. If the employee is successfully added to the
+    // TechnicalLead's direct reports true should be returned, false should be returned otherwise
     public void addReport(SoftwareEngineer e) {
+    }
+
+    //TODO (VERIFY) Should see if the employee passed in does report to this manager and if their code access is currently set
+    // to "true". If both those things are true, true is returned, otherwise false is returned
+    public boolean approveCheckIn(SoftwareEngineer e) {
+        if (e.getManager() != null && e.getCodeAccess()) {
+            return true;
+        } else
+            return false;
     }
 
     //TODO Should check if the bonus amount requested would be approved by the BusinessLead supporting this TechnicalLead.
@@ -43,19 +53,19 @@ public class TechnicalLead extends TechnicalEmployee {
     // the text " and no direct reports yet ". Example: "10 Kasey has 5 successful check ins and no direct reports yet".
     // If the TechnicalLead does have reports it might look something like "10 Kasey has 5 successful check ins and is
     // managing: /n 5 Niky has 2 successful check ins"
-public String getTeamStatus(){
-    String s = employeeStatus();
-    if (directReport.size() == 0) {
-        s += "and no direct reports yet\n";
-    } else {
-        s += " and is managing:\n";
-        for (int i = 0; i < directReport.size(); i++) {
-            int j = i + 1;
-            s += "\t" + j + ". " + directReport.get(i).employeeStatus();
+    public String getTeamStatus() {
+        String s = employeeStatus();
+        if (directReport.size() == 0) {
+            s += "and no direct reports yet\n";
+        } else {
+            s += " and is managing:\n";
+            for (int i = 0; i < directReport.size(); i++) {
+                int j = i + 1;
+                s += "\t" + j + ". " + directReport.get(i).employeeStatus();
+            }
         }
-    }
 
-    return s;
-}
+        return s;
+    }
 }
 
