@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class TechnicalLead extends TechnicalEmployee {
     private int headCount;
-    private ArrayList<Accountant> directReport = new ArrayList<>();
+    private ArrayList<SoftwareEngineer> directReport = new ArrayList<>();
 
     //Should create a new TechnicalLead that is a Manager. The TechnicalLead's base salary should be 1.3 times that
 // of a TechnicalEmployee. TechnicalLeads should have a default head count of 4.
@@ -14,11 +14,11 @@ public class TechnicalLead extends TechnicalEmployee {
         headCount = 4;
     }
 
-    public ArrayList<Accountant> getDirectReport() {
+    public ArrayList<SoftwareEngineer> getDirectReport() {
         return directReport;
     }
 
-    public void setDirectReport(ArrayList<Accountant> directReport) {
+    public void setDirectReport(ArrayList<SoftwareEngineer> directReport) {
         this.directReport = directReport;
     }
 
@@ -30,7 +30,12 @@ public class TechnicalLead extends TechnicalEmployee {
     //TODO (VERIFY) Should accept the reference to a SoftwareEngineer object, and if the TechnicalLead has head count left
     // should add this employee to their list of direct reports. If the employee is successfully added to the
     // TechnicalLead's direct reports true should be returned, false should be returned otherwise
-    public void addReport(SoftwareEngineer e) {
+    public boolean addReport(SoftwareEngineer e) {
+        if (hasHeadCount()) {
+            directReport.add(e);
+            return true;
+        } else
+            return false;
     }
 
     //TODO (VERIFY) Should see if the employee passed in does report to this manager and if their code access is currently set
