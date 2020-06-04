@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class TechnicalLead extends TechnicalEmployee {
     private int headCount;
     private ArrayList<SoftwareEngineer> directReport = new ArrayList<>();
+    BusinessLead bLead;
 
     //Should create a new TechnicalLead that is a Manager. The TechnicalLead's base salary should be 1.3 times that
 // of a TechnicalEmployee. TechnicalLeads should have a default head count of 4.
@@ -49,7 +50,12 @@ public class TechnicalLead extends TechnicalEmployee {
 
     //TODO Should check if the bonus amount requested would be approved by the BusinessLead supporting this TechnicalLead.
     // If it is, that employee should get that bonus and true should be returned. False should be returned otherwise
-    public void requestBonus(Employee e, double bonus) {
+    public boolean requestBonus(Employee e, double bonus) {
+        if(bLead.approveBonus(e,bonus)){
+            bLead.requestBonus(e,bonus);
+            return true;
+        }
+        return false;
     }
 
     //Should return a String that gives insight into this Manager and all their direct reports. It should return a
